@@ -1,0 +1,237 @@
+﻿:root {
+    background-color: #232323;
+}
+
+.main-container {
+    border: 0px solid white;
+    opacity: 0;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Centers the container both vertically and horizontally */
+    background-color: rgba(98, 98, 98, 0); /* Adjusted opacity for the background color */
+    padding: 50px;
+    width: 420px;
+    height: 330px; /* Adjust height to fit content dynamically */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    border-radius: 10px;
+    backdrop-filter: blur(0px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out, transform 0.1s ease-out;
+}
+
+.main-container.entered {
+    opacity: 0.8;
+}
+
+.pfp {
+    position: absolute;
+    top: 65px;
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    object-fit: cover;
+    border: 0px solid black;
+    margin-bottom: 10px; /* Adds space between PFP and name */
+}
+
+.name {
+    display: flex;
+    position: absolute;
+    right: -216px;
+    top: -45px;
+    font-size: 28px;
+    color: black;
+    font-family: "Segoe MDL2 Assets";
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px; /* Adds space between name and links */
+    text-align: center; /* Ensures name is centered horizontally */
+}
+
+.name:hover::before {
+    position: absolute;
+    background-color: ;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    top: 3px; /* Adjust the distance from the top */
+    left: 150%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    white-space: nowrap; /* Prevent the text from wrapping */
+    width: 50px;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.bio {
+    font-size: 15px;
+    color: black;
+    font-family: Impact, sans-serif;
+    text-align: center; /* Center the bio text */
+    margin-bottom: 20px; /* Adds space between bio and links */
+}
+
+.links {
+    position: absolute;
+    display: flex;
+    gap: 0.95rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px; /* Adds some space above links */
+    top: 200px;
+}
+
+.link1, .link2, .link3, .link4, .link5 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0px solid white;
+    top: 20px;
+}
+
+/*.link1:hover, .link2:hover, .link3:hover, .link4:hover, .link5:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+    scale: 1;
+}*/
+
+.view {
+    position: fixed;
+    width: 1em;
+    height: 1em;
+    margin-right: 10px;
+    transform: translateX(400px);
+    top: 405px;
+    right: 880px;
+    scrollbar-shadow-color: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8);
+}
+
+.num {
+    font-weight: 550;
+    text-decoration: bold;
+    color: black;
+    font-size: 14px;
+    position: fixed;
+    width: 19px;
+    height: 19px;
+    margin-right: 8px;
+    transform: translateX(364px);
+    top: 391px;
+    right: 820px;
+}
+
+.overlay {
+    font-weight: 600;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    filter: blur(0px);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8);
+}
+
+.click {
+    position: fixed;
+    font-size: 50px;
+    color: black;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 360px;
+}
+
+.info {
+    position: fixed;
+    left: 15%;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.button1 {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    left: 6%;
+    top: 464px;
+    background-color: #00000000;
+    padding: 5px;
+    width: 450px;
+    height: 35px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: bold;
+}
+
+.button2 {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    left: 6%;
+    top: 525px;
+    background-color: #00000000;
+    padding: 5px;
+    width: 450px;
+    height: 35px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: bold;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(0px);
+}
+
+/* In your App.css */
+.custom-cursor {
+    cursor: url('./images/cursor.png'), auto !important;
+}
+
+/* Apply .custom-cursor to the parent container */
+.app-container {
+    cursor: url('./images/cursor.png'), auto;
+}
+
+
+.links a {
+    cursor: url('./images/cursor.png'), auto !important;
+}
+
+.video-background.blurred {
+    filter: blur(10px) brightness(0.2); 
+    
+}
