@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import pfp from './images/pfp1.gif';
 import tiktok from './images/tiktok.png';
@@ -10,9 +10,12 @@ import stop from './song/m1.mp3';
 import bg from './videos/m.mp4';
 import git from './images/git2.png';
 import spotify from './images/spotify.png';
+import viewb from './images/viewL.svg';
+import lh from './images/lH.png';
+import rh from './images/rH.png';
 
 function App() {
-    const [viewCount, setViewCount] = useState();
+    const [viewCount, setViewCount] = useState(2045); // No commas here
     const [currentTime, setCurrentTime] = useState(0);
     const maxTime = 128;
     const [isPlaying, setIsPlaying] = useState(false);
@@ -82,6 +85,11 @@ function App() {
         setEntered(true); // Animation trigger
     };
 
+    // Function to format viewCount with commas
+    const formatViewCount = (count) => {
+        return count.toLocaleString('en-US'); // Enforce US locale for commas
+    };
+
     return (
         <div className='app-container'>
             <video
@@ -101,14 +109,17 @@ function App() {
             )}
 
             <div className={`main-container ${entered ? 'entered' : ''}`}>
-                <p className='num'>{viewCount}</p>
+                <img src={viewb} className='view' alt="View Icon" />
+                <p className='num'>{formatViewCount(viewCount)}</p> {/* Use the format function */}
                 <img src={pfp} className='pfp' alt="Profile Picture" />
                 <div className='info'>
-                    <h1 className='name'>Korumi</h1>
+                    <h1 className='name'>{"K / O"}</h1>
                     <h1 className='bio'>{bio}</h1>
                 </div>
-
                 <div className='links'>
+                    <a href="XY" target="_blank" rel="noopener noreferrer">
+                        <img src={lh} className='link1' alt="Hand" />
+                    </a>
                     <a href="https://open.spotify.com/user/31anlaabyn6jky5rgzlkaipli3im?si=6159e220adad457e" target="_blank" rel="noopener noreferrer">
                         <img src={spotify} className='link1' alt="Spotify" />
                     </a>
@@ -118,12 +129,10 @@ function App() {
                     <a href="https://discord.com/users/1132800116663791768" target="_blank" rel="noopener noreferrer">
                         <img src={discord} className='link1' alt="Discord" />
                     </a>
-                </div>
-                <div className='song'>
-                    <div className='progress-bar-container'>
-                        <div className='progress-bar' style={{ width: `${(currentTime / maxTime) * 100}%` }} />
-                    </div>
-                    <audio id='audio' src={stop} />
+                    <a href="XY" target="_blank" rel="noopener noreferrer">
+                        <img src={rh} className='link1' alt="Hand" />
+                    </a>
+                    <audio id='audio' src={stop} loop />
                 </div>
             </div>
         </div>
