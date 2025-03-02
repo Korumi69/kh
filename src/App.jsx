@@ -109,7 +109,7 @@ function App() {
                 </div>
 
                 <div className='links'>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href="https://open.spotify.com/user/31anlaabyn6jky5rgzlkaipli3im?si=6159e220adad457e" target="_blank" rel="noopener noreferrer">
                         <img src={spotify} className='link1' alt="Spotify" />
                     </a>
                     <a href="https://tiktok.com/@MS4wLjABAAAAu1JAvlApT82n6y2SRQ0YGj6669nVIz9yp8yKId4KBrY7I0NP9-B6cXBIPdj4ZYEz" target="_blank" rel="noopener noreferrer">
