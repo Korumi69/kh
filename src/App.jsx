@@ -7,7 +7,7 @@ import yt from './images/yt.png';
 import discord from './images/discord.png';
 import cover from './images/cover.png';
 import stop from './song/m1.mp3';
-import bg from './videos/m.mp4';
+import bg from './videos/light.wav';
 import git from './images/git2.png';
 import spotify from './images/spotify.png';
 import viewb from './images/viewL.svg';
