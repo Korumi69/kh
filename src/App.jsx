@@ -120,13 +120,13 @@ function App() {
                     <a href="XY" target="_blank" rel="noopener noreferrer">
                         <img src={lh} className='link1' alt="Hand" />
                     </a>
-                    <a href="https://open.spotify.com/user/31anlaabyn6jky5rgzlkaipli3im?si=6159e220adad457e" target="_blank" rel="noopener noreferrer">
+                    <a href="https://open.spotify.com/user/31zkzc4huspyazhpjo7vxyvkqrpa?si=2a4646d0fce14728" target="_blank" rel="noopener noreferrer">
                         <img src={spotify} className='link1' alt="Spotify" />
                     </a>
-                    <a href="https://tiktok.com/@MS4wLjABAAAAu1JAvlApT82n6y2SRQ0YGj6669nVIz9yp8yKId4KBrY7I0NP9-B6cXBIPdj4ZYEz" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.tiktok.com/@prince.vaqu" target="_blank" rel="noopener noreferrer">
                         <img src={tiktok} className='link1' alt="Tiktok" />
                     </a>
-                    <a href="https://discord.com/users/1132800116663791768" target="_blank" rel="noopener noreferrer">
+                    <a href="https://discord.com/users/1010727872127848550" target="_blank" rel="noopener noreferrer">
                         <img src={discord} className='link1' alt="Discord" />
                     </a>
                     <a href="XY" target="_blank" rel="noopener noreferrer">
