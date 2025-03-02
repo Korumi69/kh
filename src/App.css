@@ -1,8 +1,9 @@
-﻿:root {
+:root {
     background-color: #232323;
 }
 
 .main-container {
+    border: 0px solid white;
     opacity: 0;
     position: fixed;
     left: 50%;
@@ -10,15 +11,15 @@
     transform: translate(-50%, -50%); /* Centers the container both vertically and horizontally */
     background-color: rgba(98, 98, 98, 0); /* Adjusted opacity for the background color */
     padding: 50px;
-    width: 300px;
-    height: auto; /* Adjust height to fit content dynamically */
+    width: 420px;
+    height: 330px; /* Adjust height to fit content dynamically */
     display: flex;
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center content horizontally */
     justify-content: center; /* Center content vertically */
-    border-radius: 40px;
+    border-radius: 10px;
     backdrop-filter: blur(0px);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.5s ease-in-out, transform 0.1s ease-out;
 }
 
 .main-container.entered {
@@ -27,7 +28,7 @@
 
 .pfp {
     position: absolute;
-    top: -70px;
+    top: 65px;
     width: 100px;
     height: 100px;
     border-radius: 60%;
@@ -37,13 +38,14 @@
 }
 
 .name {
+    display: flex;
     position: absolute;
-    right: -185px;
-    top: -55px;
-    font-weight: bold;
+    right: -216px;
+    top: -45px;
     font-size: 28px;
     color: black;
-    font-family: revert, sans-serif;
+    font-family: "Segoe MDL2 Assets";
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8);
     margin-bottom: 20px; /* Adds space between name and links */
     text-align: center; /* Ensures name is centered horizontally */
 }
@@ -73,13 +75,14 @@
 }
 
 .links {
+    position: absolute;
     display: flex;
-    gap: 0.75rem;
+    gap: 0.95rem;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 25px; /* Adds some space above links */
-    top: 20px;
+    top: 200px;
 }
 
 .link1, .link2, .link3, .link4, .link5 {
@@ -88,6 +91,7 @@
     border-radius: 50%;
     object-fit: cover;
     border: 0px solid white;
+    top: 20px;
 }
 
 /*.link1:hover, .link2:hover, .link3:hover, .link4:hover, .link5:hover {
@@ -97,44 +101,48 @@
 
 .view {
     position: fixed;
-    width: 25px;
-    height: 25px;
+    width: 1em;
+    height: 1em;
     margin-right: 10px;
     transform: translateX(400px);
-    top: 16.3px;
+    top: 405px;
+    right: 880px;
+    scrollbar-shadow-color: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8);
 }
 
 .num {
-    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
     text-decoration: bold;
-    color: white;
+    color: black;
     font-size: 14px;
     position: fixed;
-    width: 20px;
-    height: 20px;
+    width: 19px;
+    height: 19px;
     margin-right: 8px;
     transform: translateX(364px);
-    top: 21px;
+    top: 391px;
+    right: 820px;
 }
 
 .overlay {
-    font-weight: bold;
+    font-weight: 600;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
-    justify-content: fixed;
-    align-items: fixed;
+    justify-content: center;
+    align-items: center;
     z-index: 10;
     filter: blur(0px);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8);
 }
 
 .click {
     position: fixed;
     font-size: 50px;
-    color: white;
+    color: black;
     left: 50%;
     transform: translateX(-50%);
     top: 360px;
@@ -218,12 +226,12 @@
     cursor: url('./images/cursor.png'), auto;
 }
 
-/* Apply custom cursor to links */
+
 .links a {
     cursor: url('./images/cursor.png'), auto !important;
 }
 
 .video-background.blurred {
-    filter: blur(10px) brightness(0.2); /* Adjust brightness to add darkness */
-    /* Or alternatively, you can add an rgba overlay */
+    filter: blur(8px) brightness(0.2); 
+    
 }
