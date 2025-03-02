@@ -113,7 +113,7 @@ function App() {
                 <p className='num'>{formatViewCount(viewCount)}</p> {/* Use the format function */}
                 <img src={pfp} className='pfp' alt="Profile Picture" />
                 <div className='info'>
-                    <h1 className='name'>{"K / O"}</h1>
+                    <h1 className='name'>{"Resn"}</h1>
                     <h1 className='bio'>{bio}</h1>
                 </div>
                 <div className='links'>
