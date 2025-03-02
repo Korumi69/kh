@@ -15,7 +15,7 @@ import lh from './images/lH.png';
 import rh from './images/rH.png';
 
 function App() {
-    const [viewCount, setViewCount] = useState(2045); // No commas here
+    const [viewCount, setViewCount] = useState(999); // No commas here
     const [currentTime, setCurrentTime] = useState(0);
     const maxTime = 128;
     const [isPlaying, setIsPlaying] = useState(false);
