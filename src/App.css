@@ -57,7 +57,7 @@
     padding: 5px;
     border-radius: 5px;
     top: 3px; /* Adjust the distance from the top */
-    left: 160%;
+    left: 165%;
     transform: translateX(-50%);
     font-size: 14px;
     white-space: nowrap; /* Prevent the text from wrapping */
