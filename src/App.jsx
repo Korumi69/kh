@@ -117,7 +117,7 @@ function App() {
                     <h1 className='bio'>{bio}</h1>
                 </div>
                 <div className='links'>
-                    <a href="XY" target="_blank" rel="noopener noreferrer">
+                    <a href="https://scamming.lol" target="_blank" rel="noopener noreferrer">
                         <img src={lh} className='link1' alt="Hand" />
                     </a>
                     <a href="https://open.spotify.com/user/31zkzc4huspyazhpjo7vxyvkqrpa?si=2a4646d0fce14728" target="_blank" rel="noopener noreferrer">
@@ -129,7 +129,7 @@ function App() {
                     <a href="https://discord.com/users/1010727872127848550" target="_blank" rel="noopener noreferrer">
                         <img src={discord} className='link1' alt="Discord" />
                     </a>
-                    <a href="XY" target="_blank" rel="noopener noreferrer">
+                    <a href="https://scamming.lol" target="_blank" rel="noopener noreferrer">
                         <img src={rh} className='link1' alt="Hand" />
                     </a>
                     <audio id='audio' src={stop} loop />
